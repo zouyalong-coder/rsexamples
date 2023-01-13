@@ -1,0 +1,14 @@
+[package]
+name = "attribute_macro"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+syn = {version="1.0.57",features=["full","fold"]} # 用于解析rust代码
+quote = "1.0.8"
+
+[lib]
+# 声明当前lib是一个proc-macro，不能包含其它代码
+proc-macro = true 

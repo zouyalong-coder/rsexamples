@@ -1,0 +1,14 @@
+[package]
+name = "rsexamples"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+derive_macro = { path = "./derive_macro" }
+attribute_macro = { path = "./attribute_macro" }
+trait_ph = { path = "./trait_ph" }
+
+[workspace]
+members = ["attribute_macro", "declarative_macro", "derive_macro", "function_macro", "trait_ph"]
